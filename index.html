@@ -1,1 +1,279 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | ชื่อของคุณ</title>
 
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Prompt',sans-serif;
+        }
+
+        body{
+            background:#f5f7fb;
+            color:#333;
+        }
+
+        /* Navbar */
+
+        nav{
+            width:100%;
+            position:fixed;
+            top:0;
+            left:0;
+            background:#fff;
+            box-shadow:0 3px 10px rgba(0,0,0,.08);
+            padding:18px 8%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            z-index:1000;
+        }
+
+        nav h2{
+            color:#2563eb;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+            gap:30px;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:#333;
+            font-weight:500;
+            transition:.3s;
+        }
+
+        nav ul li a:hover{
+            color:#2563eb;
+        }
+
+        /* Hero */
+
+        .hero{
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:120px 8% 50px;
+            gap:80px;
+        }
+
+        .hero-text{
+            max-width:600px;
+        }
+
+        .hero-text h3{
+            color:#2563eb;
+            font-size:24px;
+        }
+
+        .hero-text h1{
+            font-size:55px;
+            margin:10px 0;
+        }
+
+        .hero-text p{
+            font-size:18px;
+            line-height:1.8;
+            margin-bottom:30px;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:14px 28px;
+            margin-right:15px;
+            border-radius:10px;
+            text-decoration:none;
+            transition:.3s;
+            font-weight:500;
+        }
+
+        .primary{
+            background:#2563eb;
+            color:#fff;
+        }
+
+        .primary:hover{
+            background:#1d4ed8;
+        }
+
+        .secondary{
+            border:2px solid #2563eb;
+            color:#2563eb;
+        }
+
+        .secondary:hover{
+            background:#2563eb;
+            color:#fff;
+        }
+
+        /* Profile */
+
+        .profile img{
+            width:320px;
+            height:320px;
+            object-fit:cover;
+            border-radius:50%;
+            border:8px solid white;
+            box-shadow:0 10px 30px rgba(0,0,0,.15);
+        }
+
+        /* Highlight */
+
+        .cards{
+            padding:70px 8%;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:white;
+            padding:30px;
+            border-radius:18px;
+            text-align:center;
+            box-shadow:0 5px 15px rgba(0,0,0,.08);
+            transition:.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        .card h2{
+            color:#2563eb;
+            margin-bottom:15px;
+        }
+
+        /* Footer */
+
+        footer{
+            margin-top:60px;
+            background:#2563eb;
+            color:white;
+            text-align:center;
+            padding:25px;
+        }
+
+        @media(max-width:900px){
+
+            .hero{
+                flex-direction:column-reverse;
+                text-align:center;
+            }
+
+            .hero-text h1{
+                font-size:42px;
+            }
+
+            nav{
+                flex-direction:column;
+                gap:15px;
+            }
+
+            nav ul{
+                gap:18px;
+                flex-wrap:wrap;
+                justify-content:center;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+
+        <h2>Portfolio</h2>
+
+        <ul>
+            <li><a href="#">หน้าหลัก</a></li>
+            <li><a href="#">ประวัติส่วนตัว</a></li>
+            <li><a href="#">การศึกษา</a></li>
+            <li><a href="#">ผลงาน</a></li>
+            <li><a href="#">ติดต่อ</a></li>
+        </ul>
+
+    </nav>
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h3>สวัสดีครับ 👋</h3>
+
+            <h1>ชื่อ - นามสกุล</h1>
+
+            <p>
+                นักเรียนชั้นมัธยมศึกษาปีที่ 6
+                มีความสนใจด้านการพัฒนาเว็บไซต์ การเขียนโปรแกรม
+                และการเรียนรู้เทคโนโลยีใหม่ ๆ
+                ยินดีต้อนรับสู่เว็บไซต์ Portfolio ของผม
+            </p>
+
+            <a href="#" class="btn primary">ดูผลงาน</a>
+
+            <a href="#" class="btn secondary">ติดต่อ</a>
+
+        </div>
+
+        <div class="profile">
+
+            <img src="images/profile.jpg" alt="Profile">
+
+        </div>
+
+    </section>
+
+    <section class="cards">
+
+        <div class="card">
+            <h2>💻 Programming</h2>
+            <p>
+                HTML<br>
+                CSS<br>
+                JavaScript
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>📚 Learning</h2>
+            <p>
+                พัฒนาตนเองอยู่เสมอ<br>
+                เรียนรู้เทคโนโลยีใหม่<br>
+                ฝึกสร้างเว็บไซต์
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>🎯 Goal</h2>
+            <p>
+                ศึกษาต่อด้านวิทยาการคอมพิวเตอร์<br>
+                และพัฒนาเว็บไซต์ที่มีประโยชน์
+            </p>
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>© 2026 Portfolio | ชื่อของคุณ</p>
+
+    </footer>
+
+</body>
+</html>
