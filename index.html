@@ -1,279 +1,331 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | ทิตชญา ฑีฆะไพบูลย์</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<title>Portfolio | ชื่อของคุณ</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:'Prompt',sans-serif;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        body{
-            background:#f5f7fb;
-            color:#333;
-        }
+<style>
 
-        /* Navbar */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Prompt',sans-serif;
+scroll-behavior:smooth;
+}
 
-        nav{
-            width:100%;
-            position:fixed;
-            top:0;
-            left:0;
-            background:#fff;
-            box-shadow:0 3px 10px rgba(0,0,0,.08);
-            padding:18px 8%;
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-            z-index:1000;
-        }
+body{
+background:linear-gradient(135deg,#f7fff8,#e8f5e9);
+overflow-x:hidden;
+}
 
-        nav h2{
-            color:#2563eb;
-        }
+/* Background */
 
-        nav ul{
-            display:flex;
-            list-style:none;
-            gap:30px;
-        }
+.blur1{
+position:absolute;
+width:350px;
+height:350px;
+background:#81c784;
+filter:blur(120px);
+top:-100px;
+left:-100px;
+opacity:.4;
+z-index:-1;
+}
 
-        nav ul li a{
-            text-decoration:none;
-            color:#333;
-            font-weight:500;
-            transition:.3s;
-        }
+.blur2{
+position:absolute;
+width:300px;
+height:300px;
+background:#66bb6a;
+filter:blur(120px);
+bottom:-80px;
+right:-80px;
+opacity:.3;
+z-index:-1;
+}
 
-        nav ul li a:hover{
-            color:#2563eb;
-        }
+/* Navbar */
 
-        /* Hero */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+position:fixed;
+width:100%;
+background:rgba(255,255,255,.8);
+backdrop-filter:blur(10px);
+box-shadow:0 3px 15px rgba(0,0,0,.08);
+z-index:999;
+}
 
-        .hero{
-            min-height:100vh;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            padding:120px 8% 50px;
-            gap:80px;
-        }
+.logo{
+font-size:28px;
+font-weight:700;
+color:#2e7d32;
+}
 
-        .hero-text{
-            max-width:600px;
-        }
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
 
-        .hero-text h3{
-            color:#2563eb;
-            font-size:24px;
-        }
+nav a{
+text-decoration:none;
+color:#2e7d32;
+font-weight:500;
+transition:.3s;
+}
 
-        .hero-text h1{
-            font-size:55px;
-            margin:10px 0;
-        }
+nav a:hover{
+color:#66bb6a;
+}
 
-        .hero-text p{
-            font-size:18px;
-            line-height:1.8;
-            margin-bottom:30px;
-        }
+/* Hero */
 
-        .btn{
-            display:inline-block;
-            padding:14px 28px;
-            margin-right:15px;
-            border-radius:10px;
-            text-decoration:none;
-            transition:.3s;
-            font-weight:500;
-        }
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+min-height:100vh;
+padding:120px 8%;
+gap:60px;
+}
 
-        .primary{
-            background:#2563eb;
-            color:#fff;
-        }
+.text{
+max-width:550px;
+}
 
-        .primary:hover{
-            background:#1d4ed8;
-        }
+.text h3{
+font-size:22px;
+color:#43a047;
+}
 
-        .secondary{
-            border:2px solid #2563eb;
-            color:#2563eb;
-        }
+.text h1{
+font-size:55px;
+color:#1b5e20;
+margin:15px 0;
+}
 
-        .secondary:hover{
-            background:#2563eb;
-            color:#fff;
-        }
+.text p{
+font-size:18px;
+line-height:1.8;
+margin-bottom:35px;
+color:#444;
+}
 
-        /* Profile */
+button{
+padding:15px 35px;
+border:none;
+border-radius:50px;
+background:#2e7d32;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 10px 20px rgba(46,125,50,.3);
+}
 
-        .profile img{
-            width:320px;
-            height:320px;
-            object-fit:cover;
-            border-radius:50%;
-            border:8px solid white;
-            box-shadow:0 10px 30px rgba(0,0,0,.15);
-        }
+button:hover{
+transform:translateY(-5px);
+background:#388e3c;
+box-shadow:0 15px 30px rgba(46,125,50,.4);
+}
 
-        /* Highlight */
+/* Profile */
 
-        .cards{
-            padding:70px 8%;
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-            gap:25px;
-        }
+.profile img{
+width:320px;
+height:320px;
+object-fit:cover;
+border-radius:50%;
+border:8px solid white;
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+animation:float 3s ease-in-out infinite;
+}
 
-        .card{
-            background:white;
-            padding:30px;
-            border-radius:18px;
-            text-align:center;
-            box-shadow:0 5px 15px rgba(0,0,0,.08);
-            transition:.3s;
-        }
+@keyframes float{
 
-        .card:hover{
-            transform:translateY(-10px);
-        }
+0%{
+transform:translateY(0);
+}
 
-        .card h2{
-            color:#2563eb;
-            margin-bottom:15px;
-        }
+50%{
+transform:translateY(-15px);
+}
 
-        /* Footer */
+100%{
+transform:translateY(0);
+}
 
-        footer{
-            margin-top:60px;
-            background:#2563eb;
-            color:white;
-            text-align:center;
-            padding:25px;
-        }
+}
 
-        @media(max-width:900px){
+/* Scroll */
 
-            .hero{
-                flex-direction:column-reverse;
-                text-align:center;
-            }
+.arrow{
 
-            .hero-text h1{
-                font-size:42px;
-            }
+position:absolute;
 
-            nav{
-                flex-direction:column;
-                gap:15px;
-            }
+bottom:30px;
 
-            nav ul{
-                gap:18px;
-                flex-wrap:wrap;
-                justify-content:center;
-            }
+left:50%;
 
-        }
+transform:translateX(-50%);
 
-    </style>
+font-size:35px;
+
+color:#2e7d32;
+
+animation:down 1.5s infinite;
+
+}
+
+@keyframes down{
+
+0%{transform:translate(-50%,0);}
+
+50%{transform:translate(-50%,10px);}
+
+100%{transform:translate(-50%,0);}
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.hero{
+
+flex-direction:column-reverse;
+
+text-align:center;
+
+}
+
+.text h1{
+
+font-size:40px;
+
+}
+
+.profile img{
+
+width:240px;
+
+height:240px;
+
+}
+
+nav{
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+nav ul{
+
+gap:18px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+}
+
+</style>
 
 </head>
 
 <body>
 
-    <nav>
+<div class="blur1"></div>
+<div class="blur2"></div>
 
-        <h2>Portfolio</h2>
+<nav>
 
-        <ul>
-            <li><a href="#">หน้าหลัก</a></li>
-            <li><a href="#">ประวัติส่วนตัว</a></li>
-            <li><a href="#">การศึกษา</a></li>
-            <li><a href="#">ผลงาน</a></li>
-            <li><a href="#">ติดต่อ</a></li>
-        </ul>
+<div class="logo">Portfolio</div>
 
-    </nav>
+<ul>
 
-    <section class="hero">
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Education</a></li>
+<li><a href="#">Projects</a></li>
+<li><a href="#">Contact</a></li>
 
-        <div class="hero-text">
+</ul>
 
-            <h3>สวัสดีครับ 👋</h3>
+</nav>
 
-            <h1>ชื่อ - นามสกุล</h1>
+<section class="hero">
 
-            <p>
-                นักเรียนชั้นมัธยมศึกษาปีที่ 6
-                มีความสนใจด้านการพัฒนาเว็บไซต์ การเขียนโปรแกรม
-                และการเรียนรู้เทคโนโลยีใหม่ ๆ
-                ยินดีต้อนรับสู่เว็บไซต์ Portfolio ของผม
-            </p>
+<div class="text">
 
-            <a href="#" class="btn primary">ดูผลงาน</a>
+<h3 id="typing"></h3>
 
-            <a href="#" class="btn secondary">ติดต่อ</a>
+<h1>ชื่อ - นามสกุล</h1>
 
-        </div>
+<p>
 
-        <div class="profile">
+นักเรียนชั้นมัธยมศึกษาปีที่ 6 <br>
 
-            <img src="images/profile.jpg" alt="Profile">
+มีความสนใจด้านการออกแบบเว็บไซต์และการพัฒนาโปรแกรม <br>
 
-        </div>
+ยินดีต้อนรับสู่เว็บไซต์ Portfolio ของฉัน 🌿
 
-    </section>
+</p>
 
-    <section class="cards">
+<button onclick="location.href='projects.html'">
 
-        <div class="card">
-            <h2>💻 Programming</h2>
-            <p>
-                HTML<br>
-                CSS<br>
-                JavaScript
-            </p>
-        </div>
+ดูผลงาน
 
-        <div class="card">
-            <h2>📚 Learning</h2>
-            <p>
-                พัฒนาตนเองอยู่เสมอ<br>
-                เรียนรู้เทคโนโลยีใหม่<br>
-                ฝึกสร้างเว็บไซต์
-            </p>
-        </div>
+</button>
 
-        <div class="card">
-            <h2>🎯 Goal</h2>
-            <p>
-                ศึกษาต่อด้านวิทยาการคอมพิวเตอร์<br>
-                และพัฒนาเว็บไซต์ที่มีประโยชน์
-            </p>
-        </div>
+</div>
 
-    </section>
+<div class="profile">
 
-    <footer>
+<img src="profile.jpg" alt="Profile">
 
-        <p>© 2026 Portfolio | ชื่อของคุณ</p>
+</div>
 
-    </footer>
+</section>
+
+<div class="arrow">⌄</div>
+
+<script>
+
+const text="สวัสดีค่ะ 👋";
+
+let i=0;
+
+function typing(){
+
+if(i<text.length){
+
+document.getElementById("typing").innerHTML+=text.charAt(i);
+
+i++;
+
+setTimeout(typing,120);
+
+}
+
+}
+
+typing();
+
+</script>
 
 </body>
 </html>
