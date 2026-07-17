@@ -374,5 +374,28 @@ margin:8px;
 
 
 <script src="script.js"></script>
+  <script>
+document.addEventListener("mousemove", function(e){
+
+    let sparkle = document.createElement("span");
+
+    sparkle.innerHTML = "🌸";
+
+    sparkle.style.position = "fixed";
+    sparkle.style.left = e.clientX + "px";
+    sparkle.style.top = e.clientY + "px";
+    sparkle.style.pointerEvents = "none";
+    sparkle.style.fontSize = "18px";
+    sparkle.style.animation = "fade 1s linear";
+
+    document.body.appendChild(sparkle);
+
+
+    setTimeout(()=>{
+        sparkle.remove();
+    },1000);
+
+});
+</script>
 </body>
 </html>
