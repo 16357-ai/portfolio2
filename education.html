@@ -1,1 +1,558 @@
+<!DOCTYPE html>
+<html lang="th">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ประวัติการศึกษา | ทิตชญา ฑีฆะไพบูลย์</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Prompt',sans-serif;
+}
+
+
+body{
+
+    background:linear-gradient(135deg,#ffd6e7,#b8f2e6);
+    color:#2d6a4f;
+
+}
+
+
+/* Navbar */
+
+header{
+
+    position:fixed;
+    top:0;
+    width:100%;
+
+    padding:20px 8%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:rgba(255,255,255,.45);
+    backdrop-filter:blur(15px);
+
+    z-index:100;
+
+}
+
+
+.logo{
+
+    font-size:28px;
+    font-weight:bold;
+    color:#ff5f9e;
+
+}
+
+
+nav a{
+
+    text-decoration:none;
+    color:#2d6a4f;
+    margin-left:25px;
+
+}
+
+
+nav a:hover{
+
+    color:#ff5f9e;
+
+}
+
+
+
+/* Content */
+
+.container{
+
+    width:85%;
+    margin:auto;
+    padding-top:120px;
+
+}
+
+
+.title{
+
+    text-align:center;
+    margin-bottom:50px;
+
+}
+
+
+.title h1{
+
+    font-size:45px;
+    color:#ff5f9e;
+
+}
+
+
+
+/* Timeline */
+
+
+.timeline{
+
+    position:relative;
+    max-width:900px;
+    margin:auto;
+
+}
+
+
+/* เส้นกลาง */
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:5px;
+    background:#ff9fc5;
+
+    top:0;
+    bottom:0;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+
+
+.item{
+
+    padding:20px 40px;
+
+    position:relative;
+
+    width:50%;
+
+    animation:show 1s;
+
+}
+
+
+
+@keyframes show{
+
+from{
+
+opacity:0;
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+
+
+.left{
+
+    left:0;
+
+}
+
+
+.right{
+
+    left:50%;
+
+}
+
+
+
+/* Card */
+
+.card{
+
+    background:rgba(255,255,255,.5);
+
+    backdrop-filter:blur(20px);
+
+    padding:30px;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.1);
+
+}
+
+
+
+.card h2{
+
+    color:#ff5f9e;
+    margin-bottom:15px;
+
+}
+
+
+.card p{
+
+    line-height:1.8;
+
+}
+
+
+/* จุด Timeline */
+
+.item::after{
+
+    content:"🎓";
+
+    position:absolute;
+
+    width:45px;
+    height:45px;
+
+    background:white;
+
+    border-radius:50%;
+
+    top:30px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:22px;
+
+}
+
+
+.left::after{
+
+    right:-23px;
+
+}
+
+
+.right::after{
+
+    left:-23px;
+
+}
+
+
+
+/* Future */
+
+.future{
+
+    margin-top:60px;
+
+    background:rgba(255,255,255,.5);
+
+    padding:35px;
+
+    border-radius:30px;
+
+    text-align:center;
+
+}
+
+
+.future h2{
+
+    color:#ff5f9e;
+
+    margin-bottom:15px;
+
+}
+
+
+
+footer{
+
+    margin-top:50px;
+
+    text-align:center;
+
+    padding:25px;
+
+    background:#ffffff88;
+
+}
+
+
+
+
+
+@media(max-width:800px){
+
+
+header{
+
+flex-direction:column;
+
+}
+
+
+nav{
+
+margin-top:15px;
+
+}
+
+
+
+.timeline::before{
+
+left:20px;
+
+}
+
+
+
+.item{
+
+width:100%;
+
+padding-left:60px;
+
+padding-right:0;
+
+}
+
+
+
+.right{
+
+left:0;
+
+}
+
+
+
+.left::after,
+.right::after{
+
+left:-2px;
+
+}
+
+
+}
+
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+
+🌸 Portfolio
+
+</div>
+
+
+<nav>
+
+<a href="index.html">หน้าหลัก</a>
+
+<a href="profile.html">ประวัติ</a>
+
+<a href="education.html">การศึกษา</a>
+
+<a href="portfolio.html">ผลงาน</a>
+
+<a href="contact.html">ติดต่อ</a>
+
+</nav>
+
+
+</header>
+
+
+
+
+<div class="container">
+
+
+<div class="title">
+
+<h1>🎓 ประวัติการศึกษา</h1>
+
+<p>Education Timeline</p>
+
+</div>
+
+
+
+
+<div class="timeline">
+
+
+<div class="item left">
+
+
+<div class="card">
+
+
+<h2>ระดับมัธยมศึกษาตอนปลาย</h2>
+
+
+<p>
+
+🏫 โรงเรียนพานทอง
+
+<br>
+
+📚 แผนการเรียน : วิทยาศาสตร์ - คณิตศาสตร์
+
+<br>
+
+🎓 ระดับชั้น : มัธยมศึกษาปีที่ 6
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="item right">
+
+
+<div class="card">
+
+
+<h2>เป้าหมายการศึกษาต่อ</h2>
+
+
+<p>
+
+มีความสนใจศึกษาต่อใน
+
+<strong>คณะศิลปศาสตร์</strong>
+
+เพื่อพัฒนาความสามารถด้านภาษา
+
+การสื่อสาร และการคิดวิเคราะห์
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="item left">
+
+
+<div class="card">
+
+
+<h2>การพัฒนาตนเอง</h2>
+
+
+<p>
+
+กำลังเรียนรู้และพัฒนาทักษะใหม่ ๆ
+
+เช่น การสร้างเว็บไซต์
+
+การออกแบบ และการใช้เทคโนโลยี
+
+เพื่อเตรียมความพร้อมสำหรับอนาคต
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="future">
+
+
+<h2>🌱 เป้าหมายในอนาคต</h2>
+
+
+<p>
+
+ตั้งใจศึกษาต่อในระดับมหาวิทยาลัย
+
+พัฒนาตนเองทั้งด้านความรู้
+
+ทักษะภาษา และประสบการณ์ใหม่ ๆ
+
+เพื่อสร้างโอกาสในการทำงานในอนาคต
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+<footer>
+
+🌸 ทิตชญา ฑีฆะไพบูลย์ | Portfolio 🌸
+
+</footer>
+
+
+
+</body>
+
+</html>
