@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ผลงาน | ทิตชญา ฑีฆะไพบูลย์</title>
+<title>กิจกรรมและผลงาน | ทิตชญา ฑีฆะไพบูลย์</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -14,48 +14,50 @@
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Prompt',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Prompt',sans-serif;
 }
 
 
 body{
 
-background:linear-gradient(135deg,#ffd6e7,#b8f2e6);
-color:#2d6a4f;
+    background:linear-gradient(135deg,#ffd6e7,#b8f2e6);
+    color:#2d6a4f;
 
 }
+
 
 
 /* Navbar */
 
 header{
 
-position:fixed;
-top:0;
-width:100%;
+    position:fixed;
+    top:0;
+    width:100%;
 
-padding:20px 8%;
+    padding:20px 8%;
 
-display:flex;
-justify-content:space-between;
-align-items:center;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 
-background:rgba(255,255,255,.45);
-backdrop-filter:blur(15px);
+    background:rgba(255,255,255,.45);
 
-z-index:100;
+    backdrop-filter:blur(15px);
+
+    z-index:100;
 
 }
 
 
 .logo{
 
-font-size:28px;
-font-weight:bold;
-color:#ff5f9e;
+    font-size:28px;
+    font-weight:bold;
+    color:#ff5f9e;
 
 }
 
@@ -63,45 +65,46 @@ color:#ff5f9e;
 
 nav a{
 
-text-decoration:none;
-color:#2d6a4f;
-margin-left:25px;
+    text-decoration:none;
+    color:#2d6a4f;
+    margin-left:25px;
 
 }
 
 
 nav a:hover{
 
-color:#ff5f9e;
+    color:#ff5f9e;
 
 }
 
 
 
-/* Content */
-
+/* Container */
 
 .container{
 
-width:85%;
-margin:auto;
-padding-top:120px;
+    width:85%;
+    margin:auto;
+    padding-top:120px;
 
 }
+
 
 
 .title{
 
-text-align:center;
-margin-bottom:50px;
+    text-align:center;
+    margin-bottom:50px;
 
 }
 
 
+
 .title h1{
 
-font-size:45px;
-color:#ff5f9e;
+    font-size:45px;
+    color:#ff5f9e;
 
 }
 
@@ -109,23 +112,22 @@ color:#ff5f9e;
 
 .title p{
 
-font-size:18px;
+    font-size:18px;
 
 }
 
 
 
+/* Activity Cards */
 
-/* Portfolio Cards */
 
+.activities{
 
-.cards{
+    display:grid;
 
-display:grid;
+    grid-template-columns:repeat(3,1fr);
 
-grid-template-columns:repeat(3,1fr);
-
-gap:30px;
+    gap:30px;
 
 }
 
@@ -133,19 +135,19 @@ gap:30px;
 
 .card{
 
-background:rgba(255,255,255,.5);
+    background:rgba(255,255,255,.5);
 
-backdrop-filter:blur(20px);
+    backdrop-filter:blur(20px);
 
-padding:30px;
+    padding:30px;
 
-border-radius:30px;
+    border-radius:30px;
 
-box-shadow:0 15px 30px rgba(0,0,0,.1);
+    box-shadow:0 15px 30px rgba(0,0,0,.1);
 
-transition:.4s;
+    transition:.4s;
 
-text-align:center;
+    text-align:center;
 
 }
 
@@ -153,7 +155,23 @@ text-align:center;
 
 .card:hover{
 
-transform:translateY(-10px);
+    transform:translateY(-10px);
+
+}
+
+
+
+.card img{
+
+    width:100%;
+
+    height:200px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    margin-bottom:20px;
 
 }
 
@@ -161,9 +179,9 @@ transform:translateY(-10px);
 
 .icon{
 
-font-size:55px;
+    font-size:55px;
 
-margin-bottom:20px;
+    margin-bottom:15px;
 
 }
 
@@ -171,9 +189,9 @@ margin-bottom:20px;
 
 .card h2{
 
-color:#ff5f9e;
+    color:#ff5f9e;
 
-margin-bottom:15px;
+    margin-bottom:15px;
 
 }
 
@@ -181,42 +199,40 @@ margin-bottom:15px;
 
 .card p{
 
-line-height:1.8;
+    line-height:1.8;
 
 }
 
 
 
-
-/* Future Section */
-
-
-.future{
-
-margin-top:60px;
-
-background:rgba(255,255,255,.5);
-
-backdrop-filter:blur(20px);
-
-padding:40px;
-
-border-radius:30px;
-
-text-align:center;
-
-}
+/* Empty Project */
 
 
+.empty{
 
-.future h2{
+    margin-top:60px;
 
-color:#ff5f9e;
+    background:rgba(255,255,255,.5);
 
-margin-bottom:20px;
+    backdrop-filter:blur(20px);
+
+    padding:40px;
+
+    border-radius:30px;
+
+    text-align:center;
 
 }
 
+
+
+.empty h2{
+
+    color:#ff5f9e;
+
+    margin-bottom:20px;
+
+}
 
 
 
@@ -225,7 +241,14 @@ margin-bottom:20px;
 
 .skill{
 
-margin-top:40px;
+    margin-top:50px;
+
+}
+
+
+.skill h2{
+
+    color:#ff5f9e;
 
 }
 
@@ -233,15 +256,15 @@ margin-top:40px;
 
 .bar{
 
-height:15px;
+    width:100%;
 
-background:white;
+    height:15px;
 
-border-radius:20px;
+    background:white;
 
-overflow:hidden;
+    border-radius:20px;
 
-margin-top:10px;
+    margin:10px 0 25px;
 
 }
 
@@ -249,26 +272,27 @@ margin-top:10px;
 
 .progress{
 
-height:100%;
+    height:100%;
 
-background:linear-gradient(90deg,#ff7eb3,#8be3c5);
+    border-radius:20px;
 
-border-radius:20px;
+    background:linear-gradient(90deg,#ff7eb3,#8be3c5);
 
 }
 
 
 
 
+
 footer{
 
-margin-top:50px;
+    margin-top:50px;
 
-padding:25px;
+    text-align:center;
 
-text-align:center;
+    padding:25px;
 
-background:#ffffff88;
+    background:#ffffff88;
 
 }
 
@@ -278,36 +302,39 @@ background:#ffffff88;
 
 @media(max-width:900px){
 
-.cards{
 
-grid-template-columns:1fr;
+.activities{
+
+    grid-template-columns:1fr;
 
 }
 
 
 header{
 
-flex-direction:column;
+    flex-direction:column;
 
 }
 
 
 nav{
 
-margin-top:15px;
+    margin-top:15px;
 
 }
 
-}
 
+}
 
 </style>
+
 
 </head>
 
 
 
 <body>
+
 
 
 <header>
@@ -320,6 +347,7 @@ margin-top:15px;
 </div>
 
 
+
 <nav>
 
 <a href="index.html">หน้าหลัก</a>
@@ -328,7 +356,7 @@ margin-top:15px;
 
 <a href="education.html">การศึกษา</a>
 
-<a href="portfolio.html">ผลงาน</a>
+<a href="activities.html">ผลงาน</a>
 
 <a href="contact.html">ติดต่อ</a>
 
@@ -344,31 +372,36 @@ margin-top:15px;
 <div class="container">
 
 
+
 <div class="title">
 
-<h1>💼 ผลงาน</h1>
+<h1>🌷 กิจกรรมและผลงาน</h1>
 
-<p>My Portfolio</p>
+<p>My Activities & Portfolio</p>
 
 </div>
 
 
 
 
-<div class="cards">
+
+<div class="activities">
+
 
 
 <div class="card">
 
 <div class="icon">💻</div>
 
-<h2>Website Project</h2>
+<h2>Website Portfolio</h2>
 
 <p>
 
-กำลังพัฒนาความรู้ด้านการสร้างเว็บไซต์
+พัฒนาเว็บไซต์ Portfolio ด้วย HTML และ CSS
 
-เพื่อสร้าง Portfolio และเรียนรู้การออกแบบเว็บไซต์
+เพื่อฝึกทักษะด้านการออกแบบเว็บไซต์
+
+และการนำเสนอข้อมูลส่วนตัว
 
 </p>
 
@@ -386,11 +419,11 @@ margin-top:15px;
 
 <p>
 
-ฝึกฝนการออกแบบ
+ฝึกการออกแบบหน้าเว็บไซต์
 
-การจัดวางองค์ประกอบ
+การเลือกสี
 
-และการนำเสนอผลงานให้น่าสนใจ
+และการจัดวางองค์ประกอบให้สวยงาม
 
 </p>
 
@@ -404,15 +437,17 @@ margin-top:15px;
 
 <div class="icon">📚</div>
 
-<h2>Learning</h2>
+<h2>Learning Activities</h2>
 
 <p>
 
-ศึกษาความรู้ใหม่ ๆ
+ศึกษาความรู้เพิ่มเติม
 
-เพื่อพัฒนาตนเอง
+พัฒนาตนเอง
 
-และเตรียมความพร้อมสำหรับมหาวิทยาลัย
+และเรียนรู้ทักษะใหม่ ๆ
+
+เพื่อเตรียมพร้อมสำหรับอนาคต
 
 </p>
 
@@ -427,23 +462,19 @@ margin-top:15px;
 
 
 
-<div class="future">
+<div class="empty">
 
 
-<h2>🌱 กำลังสะสมผลงาน</h2>
+<h2>🌱 ผลงานในอนาคต</h2>
 
 
 <p>
 
-ขณะนี้อยู่ในช่วงพัฒนาทักษะ
+ขณะนี้อยู่ระหว่างการพัฒนาทักษะ
 
-และสร้างผลงานใหม่ ๆ
+และสะสมผลงานเพิ่มเติม
 
-เพื่อเพิ่มประสบการณ์
-
-โดยจะนำผลงานที่เกิดขึ้นในอนาคต
-
-มาเพิ่มเติมใน Portfolio นี้
+เพื่อเพิ่มประสบการณ์และความสามารถของตนเอง
 
 </p>
 
@@ -465,7 +496,7 @@ margin-top:15px;
 
 <div class="bar">
 
-<div class="progress" style="width:35%"></div>
+<div class="progress" style="width:40%"></div>
 
 </div>
 
@@ -475,7 +506,7 @@ margin-top:15px;
 
 <div class="bar">
 
-<div class="progress" style="width:30%"></div>
+<div class="progress" style="width:35%"></div>
 
 </div>
 
@@ -490,12 +521,14 @@ margin-top:15px;
 </div>
 
 
-</div>
-
-
-
 
 </div>
+
+
+
+
+</div>
+
 
 
 
@@ -506,7 +539,6 @@ margin-top:15px;
 🌸 ทิตชญา ฑีฆะไพบูลย์ | Portfolio 🌸
 
 </footer>
-
 
 
 
