@@ -1139,152 +1139,65 @@ margin-bottom:10px;
 ===========================*/
 
 .contact{
+    text-align:center;
+    padding:80px 20px;
+}
 
-padding:140px 8%;
 
-text-align:center;
+.contact h1{
+    font-size:45px;
+    color:#d85b9c;
+}
+
+
+.contact-box{
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:50px;
 
 }
 
-.contact-section h1{
 
-font-size:55px;
+.contact-card{
 
-color:#ff76b4;
+    width:250px;
+    padding:30px;
+    border-radius:25px;
 
-margin-bottom:15px;
+    background:white;
 
-}
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.1);
 
-.contact-subtitle{
-
-color:#666;
-
-margin-bottom:50px;
+    transition:0.5s;
 
 }
 
-.contact-wrapper{
 
-display:flex;
+.contact-card:hover{
 
-flex-direction:column;
+    transform:translateY(-15px);
 
-align-items:center;
-
-gap:50px;
+    box-shadow:
+    0 0 30px #ffb6d9;
 
 }
 
-.profile-center img{
 
-width:180px;
 
-height:180px;
+.icon{
 
-border-radius:50%;
-
-border:8px solid white;
-
-box-shadow:0 20px 35px rgba(0,0,0,.15);
-
-animation:float 3s infinite;
+    font-size:45px;
+    margin-bottom:15px;
 
 }
 
-.profile-center h2{
 
-margin-top:20px;
+.contact-card h3{
 
-color:#67c99d;
-
-}
-
-.contact-icons{
-
-display:grid;
-
-grid-template-columns:repeat(3,170px);
-
-gap:30px;
-
-justify-content:center;
-
-}
-
-.icon-card{
-
-background:rgba(255,255,255,.7);
-
-backdrop-filter:blur(20px);
-
-border-radius:25px;
-
-padding:30px;
-
-font-size:45px;
-
-transition:.4s;
-
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-
-cursor:pointer;
-
-}
-
-.icon-card span{
-
-display:block;
-
-font-size:18px;
-
-margin-top:15px;
-
-color:#666;
-
-}
-
-.icon-card:hover{
-
-transform:translateY(-10px) scale(1.05);
-
-background:linear-gradient(135deg,#ffd6ea,#d8fff0);
-
-box-shadow:0 20px 35px rgba(255,170,200,.3);
-
-}
-.btn{
-
-position:relative;
-
-overflow:hidden;
-
-}
-
-.btn::before{
-
-content:"";
-
-position:absolute;
-
-left:-120%;
-
-top:0;
-
-width:60%;
-
-height:100%;
-
-background:rgba(255,255,255,.5);
-
-transform:skewX(-25deg);
-
-transition:.7s;
-
-}
-
-.btn:hover::before{
-
-left:150%;
+    color:#e26ba6;
 
 }
