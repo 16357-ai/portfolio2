@@ -1201,3 +1201,69 @@ margin-bottom:10px;
     color:#e26ba6;
 
 }
+/* ===== Scroll Animation ===== */
+.fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.8s ease;
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ===== Glowing Card ===== */
+.card {
+    background: rgba(255,255,255,0.8);
+    border-radius: 20px;
+    padding: 20px;
+    transition: 0.4s;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px #ffb6d9;
+}
+
+
+/* ===== Cursor Sparkle ===== */
+.sparkle {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background: #ff8fcf;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: sparkle 0.8s linear forwards;
+}
+
+@keyframes sparkle {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+
+/* ===== Back To Top ===== */
+#topBtn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    border: none;
+    background: #ff9acb;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
