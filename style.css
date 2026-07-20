@@ -687,3 +687,129 @@ padding:30px;
 
 }
 }
+/* ===========================
+   Profile Page
+=========================== */
+
+.profile-page{
+
+padding:140px 8% 60px;
+
+}
+
+.profile-card{
+
+display:flex;
+
+gap:50px;
+
+background:rgba(255,255,255,.6);
+
+backdrop-filter:blur(18px);
+
+padding:40px;
+
+border-radius:30px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+}
+
+.profile-left{
+
+width:35%;
+
+text-align:center;
+
+}
+
+.profile-big{
+
+width:250px;
+
+height:250px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:8px solid white;
+
+}
+
+.profile-right{
+
+width:65%;
+
+}
+
+.profile-right h1{
+
+color:#ff7cab;
+
+margin-bottom:20px;
+
+}
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+margin-bottom:30px;
+
+}
+
+table td{
+
+padding:12px;
+
+border-bottom:1px solid #ddd;
+
+}
+
+.skills{
+
+padding:60px 8%;
+
+}
+
+.skill{
+
+margin:25px 0;
+
+}
+
+.bar{
+
+height:14px;
+
+background:#eee;
+
+border-radius:20px;
+
+overflow:hidden;
+
+}
+
+.value{
+
+height:100%;
+
+border-radius:20px;
+
+background:linear-gradient(to right,#ff9fc8,#8be0bb);
+
+}
+
+.thai{width:95%;}
+.eng{width:80%;}
+.html{width:75%;}
+.office{width:85%;}
+
+.hobby{
+
+padding:50px 8%;
+
+}
