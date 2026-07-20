@@ -1,352 +1,26 @@
 <!DOCTYPE html>
 <html lang="th">
-
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>กิจกรรมและผลงาน | ทิตชญา ฑีฆะไพบูลย์</title>
+<title>ผลงาน | ทิตชญา ฑีฆะไพบูลย์</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Prompt',sans-serif;
-}
-
-
-body{
-
-    background:linear-gradient(135deg,#ffd6e7,#b8f2e6);
-    color:#2d6a4f;
-
-}
-
-
-
-/* Navbar */
-
-header{
-
-    position:fixed;
-    top:0;
-    width:100%;
-
-    padding:20px 8%;
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    background:rgba(255,255,255,.45);
-
-    backdrop-filter:blur(15px);
-
-    z-index:100;
-
-}
-
-
-.logo{
-
-    font-size:28px;
-    font-weight:bold;
-    color:#ff5f9e;
-
-}
-
-
-
-nav a{
-
-    text-decoration:none;
-    color:#2d6a4f;
-    margin-left:25px;
-
-}
-
-
-nav a:hover{
-
-    color:#ff5f9e;
-
-}
-
-
-
-/* Container */
-
-.container{
-
-    width:85%;
-    margin:auto;
-    padding-top:120px;
-
-}
-
-
-
-.title{
-
-    text-align:center;
-    margin-bottom:50px;
-
-}
-
-
-
-.title h1{
-
-    font-size:45px;
-    color:#ff5f9e;
-
-}
-
-
-
-.title p{
-
-    font-size:18px;
-
-}
-
-
-
-/* Activity Cards */
-
-
-.activities{
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:30px;
-
-}
-
-
-
-.card{
-
-    background:rgba(255,255,255,.5);
-
-    backdrop-filter:blur(20px);
-
-    padding:30px;
-
-    border-radius:30px;
-
-    box-shadow:0 15px 30px rgba(0,0,0,.1);
-
-    transition:.4s;
-
-    text-align:center;
-
-}
-
-
-
-.card:hover{
-
-    transform:translateY(-10px);
-
-}
-
-
-
-.card img{
-
-    width:100%;
-
-    height:200px;
-
-    object-fit:cover;
-
-    border-radius:20px;
-
-    margin-bottom:20px;
-
-}
-
-
-
-.icon{
-
-    font-size:55px;
-
-    margin-bottom:15px;
-
-}
-
-
-
-.card h2{
-
-    color:#ff5f9e;
-
-    margin-bottom:15px;
-
-}
-
-
-
-.card p{
-
-    line-height:1.8;
-
-}
-
-
-
-/* Empty Project */
-
-
-.empty{
-
-    margin-top:60px;
-
-    background:rgba(255,255,255,.5);
-
-    backdrop-filter:blur(20px);
-
-    padding:40px;
-
-    border-radius:30px;
-
-    text-align:center;
-
-}
-
-
-
-.empty h2{
-
-    color:#ff5f9e;
-
-    margin-bottom:20px;
-
-}
-
-
-
-/* Skill */
-
-
-.skill{
-
-    margin-top:50px;
-
-}
-
-
-.skill h2{
-
-    color:#ff5f9e;
-
-}
-
-
-
-.bar{
-
-    width:100%;
-
-    height:15px;
-
-    background:white;
-
-    border-radius:20px;
-
-    margin:10px 0 25px;
-
-}
-
-
-
-.progress{
-
-    height:100%;
-
-    border-radius:20px;
-
-    background:linear-gradient(90deg,#ff7eb3,#8be3c5);
-
-}
-
-
-
-
-
-footer{
-
-    margin-top:50px;
-
-    text-align:center;
-
-    padding:25px;
-
-    background:#ffffff88;
-
-}
-
-
-
-
-
-@media(max-width:900px){
-
-
-.activities{
-
-    grid-template-columns:1fr;
-
-}
-
-
-header{
-
-    flex-direction:column;
-
-}
-
-
-nav{
-
-    margin-top:15px;
-
-}
-
-
-}
-
-</style>
-
+<link href="https://fonts.googleapis.com/css2?family=Mali:wght@300;400;700&display=swap" rel="stylesheet">
 
 </head>
 
-
-
 <body>
 
-
-
-<header>
-
+<header class="navbar">
 
 <div class="logo">
-
-🌸 Portfolio
-
+🪷 Portfolio
 </div>
-
-
 
 <nav>
 
@@ -354,194 +28,96 @@ nav{
 
 <a href="profile.html">ประวัติ</a>
 
-<a href="education.html">การศึกษา</a>
+<a href="activities.html">กิจกรรม</a>
 
-<a href="activities.html">ผลงาน</a>
+<a href=activities.html" class="active">ผลงาน</a>
 
 <a href="contact.html">ติดต่อ</a>
 
 </nav>
 
-
 </header>
 
+<section class="portfolio">
 
-
-
-
-<div class="container">
-
-
-
-<div class="title">
-
-<h1>🌷 กิจกรรมและผลงาน</h1>
-
-<p>My Activities & Portfolio</p>
-
-</div>
-
-
-
-
-
-<div class="activities">
-
-
-
-<div class="card">
-
-<div class="icon">💻</div>
-
-<h2>Website Portfolio</h2>
+<h1>💼 ผลงาน</h1>
 
 <p>
 
-พัฒนาเว็บไซต์ Portfolio ด้วย HTML และ CSS
+ผลงานและความภาคภูมิใจที่ได้สะสมจากการเรียน
+กิจกรรม และการพัฒนาตนเอง
 
-เพื่อฝึกทักษะด้านการออกแบบเว็บไซต์
+</p>
 
-และการนำเสนอข้อมูลส่วนตัว
+<div class="portfolio-grid">
+
+<div class="work-card">
+
+<img src="images/work1.jpg">
+
+<h2>เว็บไซต์ Portfolio</h2>
+
+<p>
+
+ออกแบบเว็บไซต์ด้วย HTML CSS JavaScript
 
 </p>
 
 </div>
 
+<div class="work-card">
 
+<img src="images/work2.jpg">
 
-
-
-<div class="card">
-
-<div class="icon">🎨</div>
-
-<h2>Creative Design</h2>
+<h2>เกียรติบัตร</h2>
 
 <p>
 
-ฝึกการออกแบบหน้าเว็บไซต์
-
-การเลือกสี
-
-และการจัดวางองค์ประกอบให้สวยงาม
+เข้าร่วมกิจกรรมและการแข่งขัน
 
 </p>
 
 </div>
 
+<div class="work-card">
 
+<img src="images/work3.jpg">
 
-
-
-<div class="card">
-
-<div class="icon">📚</div>
-
-<h2>Learning Activities</h2>
+<h2>กิจกรรม</h2>
 
 <p>
 
-ศึกษาความรู้เพิ่มเติม
-
-พัฒนาตนเอง
-
-และเรียนรู้ทักษะใหม่ ๆ
-
-เพื่อเตรียมพร้อมสำหรับอนาคต
+ค่าย อบรม และจิตอาสา
 
 </p>
 
 </div>
 
+<div class="work-card">
 
+<img src="images/work4.jpg">
 
-</div>
-
-
-
-
-
-
-<div class="empty">
-
-
-<h2>🌱 ผลงานในอนาคต</h2>
-
+<h2>ผลงานพิเศษ</h2>
 
 <p>
 
-ขณะนี้อยู่ระหว่างการพัฒนาทักษะ
-
-และสะสมผลงานเพิ่มเติม
-
-เพื่อเพิ่มประสบการณ์และความสามารถของตนเอง
+สามารถเพิ่มผลงานของตนเองได้
 
 </p>
 
+</div>
 
 </div>
 
-
-
-
-
-
-<div class="skill">
-
-
-<h2>✨ ทักษะที่กำลังพัฒนา</h2>
-
-
-<p>HTML</p>
-
-<div class="bar">
-
-<div class="progress" style="width:40%"></div>
-
-</div>
-
-
-
-<p>CSS</p>
-
-<div class="bar">
-
-<div class="progress" style="width:35%"></div>
-
-</div>
-
-
-
-<p>JavaScript</p>
-
-<div class="bar">
-
-<div class="progress" style="width:20%"></div>
-
-</div>
-
-
-
-</div>
-
-
-
-
-</div>
-
-
-
-
-
+</section>
 
 <footer>
 
-🌸 ทิตชญา ฑีฆะไพบูลย์ | Portfolio 🌸
+© 2026 Portfolio | ทิตชญา ฑีฆะไพบูลย์
 
 </footer>
 
-
+<script src="script.js"></script>
 
 </body>
-
 </html>
