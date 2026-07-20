@@ -407,568 +407,9 @@ transform:translateY(-12px);
     font-size:45px;
 
 }
-
-/* ===========================
-        Assistant
-=========================== */
-
-.assistant{
-
-    position:fixed;
-
-    right:25px;
-
-    bottom:25px;
-
-    display:flex;
-
-    align-items:flex-end;
-
-    gap:12px;
-
-    z-index:999;
-
-}
-
-.message{
-
-    background:white;
-
-    padding:15px 20px;
-
-    border-radius:20px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
-
-    animation:fadeIn 1s;
-
-}
-
-.lotus{
-
-    font-size:65px;
-
-    animation:float 3s infinite;
-
-}
-
-/* ===========================
-        Footer
-=========================== */
-
-footer{
-
-    margin-top:80px;
-
-    padding:25px;
-
-    text-align:center;
-
-    color:#777;
-
-    background:white;
-
-}
-
-/* ===========================
-        Animation
-=========================== */
-
-@keyframes fadeIn{
-
-from{
-
-opacity:0;
-
-transform:translateY(30px);
-
-}
-
-to{
-
-opacity:1;
-
-transform:translateY(0);
-
-}
-
-   /* ===========================
-      Flower Animation
-=========================== */
-
-#petals{
-    position:fixed;
-    width:100%;
-    height:100%;
-    left:0;
-    top:0;
-    pointer-events:none;
-    overflow:hidden;
-    z-index:-1;
-}
-
-.petal{
-    position:absolute;
-    top:-50px;
-    font-size:22px;
-    animation:fall linear infinite;
-    opacity:.8;
-}
-
-@keyframes fall{
-
-0%{
-    transform:translateY(-50px) rotate(0deg);
-}
-
-100%{
-    transform:translateY(110vh) rotate(360deg);
-}
-
-}
-
-/* ===========================
-      Scroll Animation
-=========================== */
-
-.hidden{
-
-    opacity:0;
-
-    transform:translateY(60px);
-
-    transition:1s;
-
-}
-
-.show{
-
-    opacity:1;
-
-    transform:translateY(0);
-
-}
-
-/* ===========================
-      Glow Effect
-=========================== */
-
-.btn{
-
-    position:relative;
-
-    overflow:hidden;
-
-}
-
-.btn::before{
-
-content:"";
-
-position:absolute;
-
-top:0;
-
-left:-100%;
-
-width:100%;
-
-height:100%;
-
-background:rgba(255,255,255,.4);
-
-transform:skewX(-30deg);
-
-transition:.6s;
-
-}
-
-.btn:hover::before{
-
-left:130%;
-
-}
-
-/* ===========================
-      Card Hover
-=========================== */
-
-.card{
-
-transition:.4s;
-
-}
-
-.card:hover{
-
-transform:translateY(-12px) scale(1.05);
-
-}
-
-/* ===========================
-      Image Hover
-=========================== */
-
-.profile{
-
-transition:.5s;
-
-}
-
-.profile:hover{
-
-transform:scale(1.05);
-
-box-shadow:0 20px 45px rgba(255,150,190,.35);
-
-}
-
-/* ===========================
-      Responsive
-=========================== */
-
-@media(max-width:900px){
-
-.hero{
-
-flex-direction:column-reverse;
-
-text-align:center;
-
-padding-top:130px;
-
-}
-
-.hero-text{
-
-width:100%;
-
-}
-
-.hero-image{
-
-margin-bottom:40px;
-
-}
-
-.profile{
-
-width:250px;
-
-height:250px;
-
-}
-
-.circle{
-
-width:270px;
-
-height:270px;
-
-}
-
-nav{
-
-display:none;
-
-}
-
-.menu-card{
-
-grid-template-columns:1fr;
-
-}
-
-.about{
-
-padding:30px;
-
-}
-
-}
-}
-/* ===========================
-   Profile Page
-=========================== */
-
-.profile-page{
-
-padding:140px 8% 60px;
-
-}
-
-.profile-card{
-
-display:flex;
-
-gap:50px;
-
-background:rgba(255,255,255,.6);
-
-backdrop-filter:blur(18px);
-
-padding:40px;
-
-border-radius:30px;
-
-box-shadow:0 10px 25px rgba(0,0,0,.1);
-
-}
-
-.profile-left{
-
-width:35%;
-
-text-align:center;
-
-}
-
-.profile-big{
-
-width:250px;
-
-height:250px;
-
-border-radius:50%;
-
-object-fit:cover;
-
-border:8px solid white;
-
-}
-
-.profile-right{
-
-width:65%;
-
-}
-
-.profile-right h1{
-
-color:#ff7cab;
-
-margin-bottom:20px;
-
-}
-
-table{
-
-width:100%;
-
-border-collapse:collapse;
-
-margin-bottom:30px;
-
-}
-
-table td{
-
-padding:12px;
-
-border-bottom:1px solid #ddd;
-
-}
-
-.skills{
-
-padding:60px 8%;
-
-}
-
-.skill{
-
-margin:25px 0;
-
-}
-
-.bar{
-
-height:14px;
-
-background:#eee;
-
-border-radius:20px;
-
-overflow:hidden;
-
-}
-
-.value{
-
-height:100%;
-
-border-radius:20px;
-
-background:linear-gradient(to right,#ff9fc8,#8be0bb);
-
-}
-
-.thai{width:95%;}
-.eng{width:80%;}
-.html{width:75%;}
-.office{width:85%;}
-
-.hobby{
-
-padding:50px 8%;
-
-}
-/* ===========================
-      Education
-=========================== */
-
-.education{
-
-padding:140px 8% 80px;
-
-text-align:center;
-
-}
-
-.education h1{
-
-font-size:50px;
-
-color:#ff78b0;
-
-margin-bottom:10px;
-
-}
-
-.subtitle{
-
-color:#666;
-
-margin-bottom:60px;
-
-}
-
-.timeline{
-
-position:relative;
-
-max-width:900px;
-
-margin:auto;
-
-}
-
-.timeline::before{
-
-content:"";
-
-position:absolute;
-
-left:50%;
-
-width:4px;
-
-height:100%;
-
-background:#ffd4e5;
-
-transform:translateX(-50%);
-
-}
-
-.timeline-item{
-
-display:flex;
-
-align-items:center;
-
-margin:60px 0;
-
-position:relative;
-
-}
-
-.circle{
-
-width:70px;
-
-height:70px;
-
-border-radius:50%;
-
-background:linear-gradient(#ffb3d1,#b8f0d0);
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-font-size:30px;
-
-z-index:2;
-
-}
-
-.content{
-
-background:white;
-
-padding:25px;
-
-margin-left:30px;
-
-border-radius:20px;
-
-box-shadow:0 10px 20px rgba(0,0,0,.08);
-
-text-align:left;
-
-flex:1;
-
-transition:.4s;
-
-}
-
-.content:hover{
-
-transform:translateY(-8px);
-
-box-shadow:0 18px 30px rgba(255,150,190,.2);
-
-}
-
-.goal{
-
-padding:60px 8%;
-
-text-align:center;
-
-}
-
-.goal-card{
-
-max-width:850px;
-
-margin:auto;
-
-padding:40px;
-
-background:rgba(255,255,255,.65);
-
-backdrop-filter:blur(18px);
-
-border-radius:25px;
-
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-
-}
-
-.goal-card h3{
-
-color:#67c79d;
-
-margin-bottom:20px;
-
-}
-/*=======================
+/*==========================
  Activities
-========================*/
+===========================*/
 
 .activities{
 
@@ -982,19 +423,105 @@ text-align:center;
 
 font-size:55px;
 
-color:#ff79ad;
+color:#ff7db2;
 
-margin-bottom:20px;
+margin-bottom:15px;
 
 }
 
-.activities p{
+.subtitle{
+
+margin-bottom:50px;
 
 color:#666;
 
-margin-bottom:40px;
+}
+
+/* Timeline */
+
+.timeline{
+
+position:relative;
+
+max-width:850px;
+
+margin:50px auto;
 
 }
+
+.timeline::before{
+
+content:"";
+
+position:absolute;
+
+left:18px;
+
+top:0;
+
+width:4px;
+
+height:100%;
+
+background:#ffc7dc;
+
+}
+
+.timeline-box{
+
+display:flex;
+
+gap:25px;
+
+margin-bottom:40px;
+
+text-align:left;
+
+}
+
+.dot{
+
+width:40px;
+
+height:40px;
+
+background:linear-gradient(#ff9bc3,#9be7c3);
+
+border-radius:50%;
+
+flex-shrink:0;
+
+box-shadow:0 0 15px rgba(255,170,200,.5);
+
+}
+
+.text{
+
+background:rgba(255,255,255,.65);
+
+backdrop-filter:blur(15px);
+
+padding:20px;
+
+border-radius:20px;
+
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+width:100%;
+
+}
+
+.gallery-title{
+
+margin-top:70px;
+
+margin-bottom:35px;
+
+color:#66c89d;
+
+}
+
+/* Gallery */
 
 .activities-grid{
 
@@ -1002,19 +529,17 @@ display:grid;
 
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 
-gap:30px;
+gap:25px;
 
 }
 
 .activity-card{
 
-background:rgba(255,255,255,.65);
-
-backdrop-filter:blur(18px);
-
-padding:20px;
+background:white;
 
 border-radius:25px;
+
+padding:18px;
 
 transition:.4s;
 
@@ -1024,9 +549,9 @@ box-shadow:0 10px 25px rgba(0,0,0,.08);
 
 .activity-card:hover{
 
-transform:translateY(-12px);
+transform:translateY(-10px);
 
-box-shadow:0 20px 35px rgba(255,160,190,.25);
+box-shadow:0 20px 35px rgba(255,170,200,.25);
 
 }
 
@@ -1038,16 +563,16 @@ height:220px;
 
 object-fit:cover;
 
-border-radius:20px;
+border-radius:18px;
 
-margin-bottom:20px;
+margin-bottom:15px;
 
 }
 
-.activity-card h2{
+.activity-card h3{
 
-color:#66c79d;
+color:#ff7db2;
 
-margin-bottom:15px;
+margin-bottom:10px;
 
 }
