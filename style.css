@@ -1,4 +1,3 @@
-
 /* ===========================
    Google Font
 =========================== */
@@ -407,289 +406,283 @@ transform:translateY(-12px);
     font-size:45px;
 
 }
-/*==========================
- Activities
-===========================*/
 
-.activities{
+/* ===========================
+        Assistant
+=========================== */
 
-padding:140px 8%;
+.assistant{
 
-text-align:center;
+    position:fixed;
 
-}
+    right:25px;
 
-.activities h1{
+    bottom:25px;
 
-font-size:55px;
+    display:flex;
 
-color:#ff7db2;
+    align-items:flex-end;
 
-margin-bottom:15px;
+    gap:12px;
 
-}
-
-.subtitle{
-
-margin-bottom:50px;
-
-color:#666;
+    z-index:999;
 
 }
 
-/* Timeline */
+.message{
 
-.timeline{
+    background:white;
 
-position:relative;
+    padding:15px 20px;
 
-max-width:850px;
+    border-radius:20px;
 
-margin:50px auto;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    animation:fadeIn 1s;
 
 }
 
-.timeline::before{
+.lotus{
+
+    font-size:65px;
+
+    animation:float 3s infinite;
+
+}
+
+/* ===========================
+        Footer
+=========================== */
+
+footer{
+
+    margin-top:80px;
+
+    padding:25px;
+
+    text-align:center;
+
+    color:#777;
+
+    background:white;
+
+}
+
+/* ===========================
+        Animation
+=========================== */
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+/* ===========================
+      Flower Animation
+=========================== */
+
+#petals{
+    position:fixed;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:-1;
+}
+
+.petal{
+    position:absolute;
+    top:-50px;
+    font-size:22px;
+    animation:fall linear infinite;
+    opacity:.8;
+}
+
+@keyframes fall{
+
+0%{
+    transform:translateY(-50px) rotate(0deg);
+}
+
+100%{
+    transform:translateY(110vh) rotate(360deg);
+}
+
+}
+
+/* ===========================
+      Scroll Animation
+=========================== */
+
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:1s;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* ===========================
+      Glow Effect
+=========================== */
+
+.btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.btn::before{
 
 content:"";
 
 position:absolute;
 
-left:18px;
-
 top:0;
 
-width:4px;
+left:-100%;
+
+width:100%;
 
 height:100%;
 
-background:#ffc7dc;
+background:rgba(255,255,255,.4);
+
+transform:skewX(-30deg);
+
+transition:.6s;
 
 }
 
-.timeline-box{
+.btn:hover::before{
 
-display:flex;
-
-gap:25px;
-
-margin-bottom:40px;
-
-text-align:left;
+left:130%;
 
 }
 
-.dot{
+/* ===========================
+      Card Hover
+=========================== */
 
-width:40px;
-
-height:40px;
-
-background:linear-gradient(#ff9bc3,#9be7c3);
-
-border-radius:50%;
-
-flex-shrink:0;
-
-box-shadow:0 0 15px rgba(255,170,200,.5);
-
-}
-
-.text{
-
-background:rgba(255,255,255,.65);
-
-backdrop-filter:blur(15px);
-
-padding:20px;
-
-border-radius:20px;
-
-box-shadow:0 10px 20px rgba(0,0,0,.08);
-
-width:100%;
-
-}
-
-.gallery-title{
-
-margin-top:70px;
-
-margin-bottom:35px;
-
-color:#66c89d;
-
-}
-
-/* Gallery */
-
-.activities-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-
-gap:25px;
-
-}
-
-.activity-card{
-
-background:white;
-
-border-radius:25px;
-
-padding:18px;
+.card{
 
 transition:.4s;
 
-box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card:hover{
+
+transform:translateY(-12px) scale(1.05);
 
 }
 
-.activity-card:hover{
+/* ===========================
+      Image Hover
+=========================== */
 
-transform:translateY(-10px);
+.profile{
 
-box-shadow:0 20px 35px rgba(255,170,200,.25);
-
-}
-
-.activity-card img{
-
-width:100%;
-
-height:220px;
-
-object-fit:cover;
-
-border-radius:18px;
-
-margin-bottom:15px;
+transition:.5s;
 
 }
 
-.activity-card h3{
+.profile:hover{
 
-color:#ff7db2;
+transform:scale(1.05);
 
-margin-bottom:10px;
+box-shadow:0 20px 45px rgba(255,150,190,.35);
 
 }
-/* CONTACT NEW STYLE */
 
-.contact-section{
+/* ===========================
+      Responsive
+=========================== */
 
-padding:140px 8%;
+@media(max-width:900px){
+
+.hero{
+
+flex-direction:column-reverse;
 
 text-align:center;
 
-}
-
-.contact-section h1{
-
-font-size:55px;
-
-color:#ff76b4;
-
-margin-bottom:15px;
+padding-top:130px;
 
 }
 
-.contact-subtitle{
+.hero-text{
 
-color:#666;
-
-margin-bottom:50px;
+width:100%;
 
 }
 
-.contact-wrapper{
+.hero-image{
 
-display:flex;
-
-flex-direction:column;
-
-align-items:center;
-
-gap:50px;
+margin-bottom:40px;
 
 }
 
-.profile-center img{
+.profile{
 
-width:180px;
+width:250px;
 
-height:180px;
-
-border-radius:50%;
-
-border:8px solid white;
-
-box-shadow:0 20px 35px rgba(0,0,0,.15);
-
-animation:float 3s infinite;
+height:250px;
 
 }
 
-.profile-center h2{
+.circle{
 
-margin-top:20px;
+width:270px;
 
-color:#67c99d;
-
-}
-
-.contact-icons{
-
-display:grid;
-
-grid-template-columns:repeat(3,170px);
-
-gap:30px;
-
-justify-content:center;
+height:270px;
 
 }
 
-.icon-card{
+nav{
 
-background:rgba(255,255,255,.7);
+display:none;
 
-backdrop-filter:blur(20px);
+}
 
-border-radius:25px;
+.menu-card{
+
+grid-template-columns:1fr;
+
+}
+
+.about{
 
 padding:30px;
 
-font-size:45px;
-
-transition:.4s;
-
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-
-cursor:pointer;
-
 }
-
-.icon-card span{
-
-display:block;
-
-font-size:18px;
-
-margin-top:15px;
-
-color:#666;
-
-}
-
-.icon-card:hover{
-
-transform:translateY(-10px) scale(1.05);
-
-background:linear-gradient(135deg,#ffd6ea,#d8fff0);
-
-box-shadow:0 20px 35px rgba(255,170,200,.3);
 
 }
