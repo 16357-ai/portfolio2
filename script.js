@@ -1,22 +1,52 @@
-window.addEventListener("load",function(){
+// Scroll Animation
+const items = document.querySelectorAll(".fade-up");
 
-setTimeout(()=>{
+window.addEventListener("scroll", () => {
+    items.forEach(item => {
+        const position = item.getBoundingClientRect().top;
 
-document.getElementById("loader").style.display="none";
+        if(position < window.innerHeight - 100){
+            item.classList.add("show");
+        }
+    });
+});
 
-},1800);
+
+// Mouse Sparkle
+document.addEventListener("mousemove", e => {
+
+    let sparkle = document.createElement("div");
+
+    sparkle.className = "sparkle";
+
+    sparkle.style.left = e.pageX + "px";
+    sparkle.style.top = e.pageY + "px";
+
+    document.body.appendChild(sparkle);
+
+    setTimeout(()=>{
+        sparkle.remove();
+    },800);
 
 });
-const toggle=document.getElementById("themeToggle");
 
-toggle.onclick=function(){
 
-document.body.classList.toggle("dark");
+// Back To Top
+let btn = document.getElementById("topBtn");
 
-if(document.body.classList.contains("dark")){
-toggle.innerHTML="☀";
-}else{
-toggle.innerHTML="🌙";
-}
+window.onscroll = function(){
 
+    if(document.documentElement.scrollTop > 300){
+        btn.style.display="block";
+    }else{
+        btn.style.display="none";
+    }
+
+};
+
+function topPage(){
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
 }
