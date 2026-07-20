@@ -6,396 +6,221 @@
 
 <title>Portfolio | ทิตชญา ฑีฆะไพบูลย์</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Prompt',sans-serif;
-}
-
-body{
-background:linear-gradient(-45deg,#ffd6e7,#b8f2e6,#fff5f8,#d8fff2);
-background-size:400% 400%;
-animation:bg 12s ease infinite;
-overflow-x:hidden;
-}
-
-@keyframes bg{
-0%{background-position:0% 50%;}
-50%{background-position:100% 50%;}
-100%{background-position:0% 50%;}
-}
-
-/* ===== Navbar ===== */
-
-header{
-position:fixed;
-top:0;
-width:100%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 8%;
-background:rgba(255,255,255,.35);
-backdrop-filter:blur(15px);
-z-index:999;
-}
-
-.logo{
-font-size:28px;
-font-weight:bold;
-color:#ff5f9e;
-}
-
-nav a{
-text-decoration:none;
-margin-left:25px;
-color:#2d6a4f;
-font-weight:500;
-transition:.3s;
-}
-
-nav a:hover{
-color:#ff5f9e;
-}
-
-/* ===== Hero ===== */
-
-.hero{
-min-height:100vh;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:120px 8%;
-}
-
-.text{
-width:55%;
-animation:fade 1.2s;
-}
-
-@keyframes fade{
-from{
-opacity:0;
-transform:translateY(40px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
-
-.text h3{
-font-size:28px;
-color:#ff5f9e;
-}
-
-.text h1{
-font-size:65px;
-color:#2d6a4f;
-margin:10px 0;
-}
-
-.text h2{
-font-size:28px;
-color:#555;
-}
-
-.text p{
-margin:30px 0;
-line-height:2;
-font-size:18px;
-color:#444;
-}
-
-button{
-padding:15px 35px;
-border:none;
-border-radius:40px;
-font-size:17px;
-cursor:pointer;
-margin-right:15px;
-transition:.3s;
-}
-
-.btn1{
-background:#ff7eb3;
-color:white;
-box-shadow:0 10px 20px rgba(255,126,179,.4);
-}
-
-.btn2{
-background:#8be3c5;
-color:white;
-box-shadow:0 10px 20px rgba(139,227,197,.4);
-}
-
-button:hover{
-transform:translateY(-6px) scale(1.05);
-}
-
-/* ===== Card Glass ===== */
-
-.card{
-
-background:rgba(255,255,255,.35);
-backdrop-filter:blur(18px);
-padding:30px;
-border-radius:30px;
-box-shadow:0 20px 40px rgba(0,0,0,.08);
-
-}
-
-/* ===== Profile ===== */
-
-.image{
-
-display:flex;
-justify-content:center;
-align-items:center;
-
-}
-
-.image img{
-
-width:380px;
-height:380px;
-border-radius:50%;
-object-fit:cover;
-border:8px solid white;
-box-shadow:0 20px 40px rgba(0,0,0,.15);
-animation:float 3s ease-in-out infinite;
-
-}
-
-@keyframes float{
-
-0%{transform:translateY(0);}
-50%{transform:translateY(-18px);}
-100%{transform:translateY(0);}
-
-}
-
-/* ===== Bubble ===== */
-
-.circle{
-
-position:absolute;
-border-radius:50%;
-background:rgba(255,255,255,.35);
-animation:move 10s linear infinite;
-
-}
-
-.c1{
-width:80px;
-height:80px;
-left:5%;
-top:20%;
-}
-
-.c2{
-width:120px;
-height:120px;
-right:10%;
-top:70%;
-}
-
-.c3{
-width:60px;
-height:60px;
-left:70%;
-top:15%;
-}
-
-@keyframes move{
-
-0%{
-transform:translateY(0);
-}
-
-50%{
-transform:translateY(-30px);
-}
-
-100%{
-transform:translateY(0);
-}
-
-}
-
-/* ===== Footer ===== */
-
-footer{
-
-text-align:center;
-padding:25px;
-background:#ffffff88;
-backdrop-filter:blur(10px);
-
-}
-
-/* ===== Responsive ===== */
-
-@media(max-width:900px){
-
-.hero{
-flex-direction:column-reverse;
-text-align:center;
-}
-
-.text{
-width:100%;
-margin-top:40px;
-}
-
-.text h1{
-font-size:42px;
-}
-
-.image img{
-width:260px;
-height:260px;
-}
-
-header{
-flex-direction:column;
-}
-
-nav{
-margin-top:15px;
-}
-
-nav a{
-display:inline-block;
-margin:8px;
-}
-
-}
-
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Mali:wght@300;400;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-  
-<div class="circle c1"></div>
-<div class="circle c2"></div>
-<div class="circle c3"></div>
 
-<header>
+<!-- ===== กลีบดอกไม้ ===== -->
+<div id="petals"></div>
 
-<div class="logo">
-🌸 Portfolio
-</div>
+<!-- ===== Navbar ===== -->
+<header class="navbar">
 
-<nav>
+    <div class="logo">
+        🪷 Portfolio
+    </div>
 
-<a href="index.html">หน้าหลัก</a>
-<a href="profile.html">ประวัติ</a>
-<a href="education.html">การศึกษา</a>
-<a href="activities.html">ผลงาน</a>
-<a href="contact.html">ติดต่อ</a>
+    <nav>
 
-</nav>
+        <a href="index.html">หน้าหลัก</a>
+
+        <a href="profile.html">ประวัติ</a>
+
+        <a href="education.html">การศึกษา</a>
+
+        <a href="activities.html">ผลงาน</a>
+
+        <a href="contact.html">ติดต่อ</a>
+
+    </nav>
 
 </header>
 
+
+<!-- ===== Hero ===== -->
+
 <section class="hero">
 
-<div class="text">
+<div class="hero-text">
 
-<div class="card">
+<span>🌸 Welcome To My Portfolio</span>
 
-<h3>🌷 Hello, I'm</h3>
+<h1>
 
-<h1>ทิตชญา ฑีฆะไพบูลย์</h1>
+ทิตชญา<br>
 
-<h2>ชื่อเล่น : นิว</h2>
+ฑีฆะไพบูลย์
+
+</h1>
 
 <p>
 
-นักเรียนชั้นมัธยมศึกษาปีที่ 6<br>
-โรงเรียนพานทอง<br>
-แผนการเรียน วิทย์–คณิตศาสตร์
+สวัสดีค่ะ ยินดีต้อนรับสู่เว็บไซต์ Portfolio ของฉัน
 
-<br><br>
+เว็บไซต์นี้รวบรวมข้อมูลส่วนตัว ประวัติ การศึกษา
 
-มีความสนใจศึกษาต่อในคณะศิลปศาสตร์
-และกำลังพัฒนาทักษะด้านการสร้างเว็บไซต์
-เพื่อเตรียมความพร้อมสำหรับการศึกษาต่อ
+ผลงาน และช่องทางการติดต่อไว้ในที่เดียว
 
 </p>
 
-<a href="profile.html">
-<button class="btn1">👤 ประวัติส่วนตัว</button>
+<div class="buttons">
+
+<a href="profile.html" class="btn pink">
+
+ประวัติส่วนตัว
+
 </a>
 
-<a href="activities.html">
-<button class="btn2">💼 ผลงาน</button>
+<a href="portfolio.html" class="btn green">
+
+ผลงาน
+
 </a>
 
 </div>
 
 </div>
 
-<div class="image">
 
-<img src="images/IMG_9973.jpeg" alt="Profile">
+<div class="hero-image">
+
+<div class="circle"></div>
+
+<img src="images/profile.jpg" class="profile">
 
 </div>
 
 </section>
 
+
+<!-- ===== About ===== -->
+
+<section class="about">
+
+<h2>
+
+🌷 About Me
+
+</h2>
+
+<p>
+
+"Believe in yourself and never stop learning."
+
+ฉันสนใจการออกแบบเว็บไซต์ การเขียนโปรแกรม
+
+
+
+มุ่งมั่นพัฒนาตนเองอยู่เสมอ
+
+</p>
+
+</section>
+
+
+
+<!-- ===== Quick Menu ===== -->
+
+<section class="menu-card">
+
+<div class="card">
+
+🌸
+
+<h3>ประวัติ</h3>
+
+<p>
+
+ข้อมูลส่วนตัว
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+🎓
+
+<h3>การศึกษา</h3>
+
+<p>
+
+ประวัติการศึกษา
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+💼
+
+<h3>ผลงาน</h3>
+
+<p>
+
+Portfolio
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+📱
+
+<h3>ติดต่อ</h3>
+
+<p>
+
+Contact
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- ===== Lotus Assistant ===== -->
+
+<div class="assistant" id="assistant">
+
+<div class="message">
+
+🌸 ยินดีต้อนรับสู่ Portfolio ของฉัน
+
+</div>
+
+<div class="lotus">
+
+🪷
+
+</div>
+
+</div>
+
+
+
+<!-- ===== Footer ===== -->
+
 <footer>
 
-<p>🌸 Thank you for visiting my Portfolio 🌸</p>
-<p>Instagram : @nnewij</p>
+© 2026 Portfolio | Designed by
+
+<b>ทิตชญา ฑีฆะไพบูลย์</b>
 
 </footer>
-<!-- Dark Mode Button -->
-<button id="darkBtn" class="dark-btn">
-🌙
-</button>
-
-
-<!-- Back To Top -->
-<button id="topBtn">
-⬆️
-</button>
-
-
-<!-- Sakura -->
-<div class="sakura"></div>
-
 
 <script src="script.js"></script>
-  <script>
-document.addEventListener("mousemove", function(e){
 
-    let sparkle = document.createElement("span");
-
-    sparkle.innerHTML = "🌸";
-
-    sparkle.style.position = "fixed";
-    sparkle.style.left = e.clientX + "px";
-    sparkle.style.top = e.clientY + "px";
-    sparkle.style.pointerEvents = "none";
-    sparkle.style.fontSize = "18px";
-    sparkle.style.animation = "fade 1s linear";
-
-    document.body.appendChild(sparkle);
-
-
-    setTimeout(()=>{
-        sparkle.remove();
-    },1000);
-
-});
-</script>
 </body>
 </html>
