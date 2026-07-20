@@ -1,503 +1,218 @@
 <!DOCTYPE html>
 <html lang="th">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>ประวัติส่วนตัว | ทิตชญา ฑีฆะไพบูลย์</title>
 
+<link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-
-<style>
-
-
-*{
-
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Prompt',sans-serif;
-
-}
-
-
-body{
-
-min-height:100vh;
-background:linear-gradient(135deg,#ffd6e7,#b8f2e6);
-color:#2d6a4f;
-
-}
-
-
-/* Navbar */
-
-header{
-
-position:fixed;
-top:0;
-width:100%;
-padding:20px 8%;
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-
-background:rgba(255,255,255,.45);
-backdrop-filter:blur(15px);
-
-z-index:999;
-
-}
-
-
-.logo{
-
-font-size:28px;
-font-weight:bold;
-color:#ff5f9e;
-
-}
-
-
-nav a{
-
-text-decoration:none;
-margin-left:25px;
-color:#2d6a4f;
-font-weight:500;
-
-}
-
-
-nav a:hover{
-
-color:#ff5f9e;
-
-}
-
-
-
-/* Main */
-
-
-.container{
-
-padding-top:120px;
-width:85%;
-margin:auto;
-
-}
-
-
-
-/* Title */
-
-
-.title{
-
-text-align:center;
-margin-bottom:40px;
-
-animation:show 1s;
-
-}
-
-
-.title h1{
-
-font-size:45px;
-color:#ff5f9e;
-
-}
-
-
-.title p{
-
-font-size:18px;
-
-}
-
-
-
-/* Profile Card */
-
-
-.profile-card{
-
-display:flex;
-gap:50px;
-
-background:rgba(255,255,255,.45);
-
-backdrop-filter:blur(20px);
-
-padding:40px;
-
-border-radius:35px;
-
-box-shadow:0 20px 40px rgba(0,0,0,.1);
-
-animation:show 1.2s;
-
-}
-
-
-
-@keyframes show{
-
-from{
-
-opacity:0;
-transform:translateY(50px);
-
-}
-
-to{
-
-opacity:1;
-transform:translateY(0);
-
-}
-
-}
-
-
-
-.profile-img{
-
-width:120px;
-height:120px;
-
-border-radius:50%;
-
-object-fit:cover;
-
-border:8px solid white;
-
-box-shadow:0 10px 30px rgba(0,0,0,.15);
-
-}
-
-
-
-.info h2{
-
-color:#ff5f9e;
-
-margin-bottom:20px;
-
-}
-
-
-
-.info p{
-
-line-height:2;
-
-font-size:17px;
-
-}
-
-
-
-/* Section */
-
-
-.box{
-
-margin-top:40px;
-
-background:rgba(255,255,255,.45);
-
-backdrop-filter:blur(20px);
-
-padding:35px;
-
-border-radius:30px;
-
-box-shadow:0 15px 30px rgba(0,0,0,.08);
-
-
-}
-
-
-
-.box h2{
-
-color:#ff5f9e;
-
-margin-bottom:20px;
-
-}
-
-
-.box ul{
-
-line-height:2.2;
-
-padding-left:25px;
-
-font-size:17px;
-
-}
-
-
-
-/* Footer */
-
-
-footer{
-
-margin-top:50px;
-
-text-align:center;
-
-padding:25px;
-
-background:#ffffff88;
-
-}
-
-
-
-
-
-@media(max-width:800px){
-
-
-header{
-
-flex-direction:column;
-
-}
-
-
-nav{
-
-margin-top:15px;
-
-}
-
-
-.profile-card{
-
-flex-direction:column;
-
-text-align:center;
-
-}
-
-
-
-.profile-img{
-
-margin:auto;
-
-}
-
-
-
-}
-
-</utostyle>
-
+<link href="https://fonts.googleapis.com/css2?family=Mali:wght@300;400;700&display=swap" rel="stylesheet">
 
 </head>
 
-
-
 <body>
 
-<header>
-
+<header class="navbar">
 
 <div class="logo">
-
-🌸 Portfolio
-
+🪷 Portfolio
 </div>
-
 
 <nav>
 
 <a href="index.html">หน้าหลัก</a>
 
-<a href="profile.html">ประวัติ</a>
+<a href="profile.html" class="active">ประวัติ</a>
 
 <a href="education.html">การศึกษา</a>
 
-<a href="activities.html">ผลงาน</a>
+<a href=activities.html">ผลงาน</a>
 
 <a href="contact.html">ติดต่อ</a>
 
-
 </nav>
-
 
 </header>
 
-
-
-
-<div class="container">
-
-
-
-<div class="title">
-
-<h1>🌷 ประวัติส่วนตัว</h1>
-
-<p>About Me</p>
-
-</div>
-
-
-
+<section class="profile-page">
 
 <div class="profile-card">
 
+<div class="profile-left">
 
-<img src="images/att._7bJ9iwhavlJnnUI8pc8jWZJroDMZPwiTqFvcX7TxB0.jpeg"
-class="profile-img">
+<img src="images/profile.jpg" class="profile-big">
 
+<h2>ทิตชญา ฑีฆะไพบูลย์</h2>
 
+<p>นักเรียนชั้นมัธยมศึกษาปีที่ 6</p>
 
-<div class="info">
+</div>
 
+<div class="profile-right">
 
-<h2>
-ทิตชญา ฑีฆะไพบูลย์
-</h2>
+<h1>🌸 ประวัติส่วนตัว</h1>
 
+<table>
+
+<tr>
+<td><strong>ชื่อ-สกุล</strong></td>
+<td>ทิตชญา ฑีฆะไพบูลย์</td>
+</tr>
+
+<tr>
+<td><strong>ชื่อเล่น</strong></td>
+<td>.............</td>
+</tr>
+
+<tr>
+<td><strong>วันเกิด</strong></td>
+<td>.............</td>
+</tr>
+
+<tr>
+<td><strong>อายุ</strong></td>
+<td>18 ปี</td>
+</tr>
+
+<tr>
+<td><strong>สัญชาติ</strong></td>
+<td>ไทย</td>
+</tr>
+
+<tr>
+<td><strong>ศาสนา</strong></td>
+<td>พุทธ</td>
+</tr>
+
+<tr>
+<td><strong>โรงเรียน</strong></td>
+<td>................................</td>
+</tr>
+
+<tr>
+<td><strong>แผนการเรียน</strong></td>
+<td>................................</td>
+</tr>
+
+</table>
+
+<h2>🌷 เกี่ยวกับฉัน</h2>
 
 <p>
 
-ชื่อเล่น : นิว
+ฉันเป็นนักเรียนชั้นมัธยมศึกษาปีที่ 6
 
-<br>
+มีความสนใจด้านภาษา การอ่าน การเขียน
 
-กำลังศึกษาอยู่ระดับชั้นมัธยมศึกษาปีที่ 6
+และการสื่อสาร
 
-<br>
+มีเป้าหมายศึกษาต่อคณะอักษรศาสตร์
 
-โรงเรียน : พานทอง
+เพื่อพัฒนาทักษะด้านภาษา
 
-<br>
-
-แผนการเรียน : วิทยาศาสตร์ - คณิตศาสตร์
-
-<br>
-
-ความสนใจ : ศึกษาต่อคณะศิลปศาสตร์
-
+และนำความรู้ไปใช้ให้เกิดประโยชน์ในอนาคต
 
 </p>
 
-
+</div>
 
 </div>
 
+</section>
+
+<section class="skills">
+
+<h2>✨ ความสามารถ</h2>
+
+<div class="skill">
+
+<p>ภาษาไทย</p>
+
+<div class="bar">
+
+<div class="value thai"></div>
 
 </div>
 
+</div>
 
+<div class="skill">
 
+<p>ภาษาอังกฤษ</p>
 
+<div class="bar">
 
-<div class="box">
-
-
-<h2>
-🌸 เกี่ยวกับฉัน
-</h2>
-
-
-<p>
-
-สวัสดีค่ะ ดิฉันชื่อทิตชญา ฑีฆะไพบูลย์
-ชื่อเล่น นิว ปัจจุบันกำลังศึกษาอยู่ชั้นมัธยมศึกษาปีที่ 6
-โรงเรียนพานทอง แผนการเรียนวิทยาศาสตร์-คณิตศาสตร์
-
-เป็นคนที่มีความสนใจในการเรียนรู้สิ่งใหม่ ๆ
-ชอบพัฒนาตนเอง และต้องการศึกษาต่อในคณะศิลปศาสตร์
-เพื่อพัฒนาทักษะด้านภาษา การสื่อสาร และการคิดวิเคราะห์
-
-</p>
-
+<div class="value eng"></div>
 
 </div>
 
+</div>
 
+<div class="skill">
 
+<p>HTML / CSS</p>
 
+<div class="bar">
 
-
-<div class="box">
-
-
-<h2>
-🌿 งานอดิเรก
-</h2>
-
-
-<ul>
-
-<li>📖 อ่านหนังสือ</li>
-
-<li>🎧 ฟังเพลง</li>
-
-<li>🎬 ดูภาพยนตร์</li>
-
-<li>🌱 ศึกษาความรู้ใหม่ ๆ</li>
-
-</ul>
-
+<div class="value html"></div>
 
 </div>
 
+</div>
 
+<div class="skill">
 
+<p>Microsoft Office</p>
 
+<div class="bar">
 
-<div class="box">
-
-
-<h2>
-💗 เป้าหมายในอนาคต
-</h2>
-
-
-<p>
-
-ตั้งใจศึกษาต่อในคณะศิลปศาสตร์
-พัฒนาความสามารถด้านภาษาและการสื่อสาร
-รวมถึงสร้างประสบการณ์ใหม่ ๆ
-เพื่อเตรียมพร้อมสำหรับการทำงานในอนาคต
-
-</p>
-
+<div class="value office"></div>
 
 </div>
 
+</div>
 
+</section>
+
+<section class="hobby">
+
+<h2>💖 งานอดิเรก</h2>
+
+<div class="menu-card">
+
+<div class="card">
+📚
+<h3>อ่านหนังสือ</h3>
+</div>
+
+<div class="card">
+✍️
+<h3>เขียน</h3>
+</div>
+
+<div class="card">
+🎵
+<h3>ฟังเพลง</h3>
+</div>
+
+<div class="card">
+💻
+<h3>ออกแบบเว็บไซต์</h3>
+</div>
 
 </div>
 
-
+</section>
 
 <footer>
 
-🌸 ทิตชญา ฑีฆะไพบูลย์ | Portfolio 🌸
+© 2026 Portfolio | ทิตชญา ฑีฆะไพบูลย์
 
 </footer>
 
-
+<script src="script.js"></script>
 
 </body>
-
 </html>
